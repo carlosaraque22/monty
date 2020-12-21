@@ -34,4 +34,5 @@ typedef struct instruction_s
 } instruction_t;
 void _pall(stack_t **head, unsigned int line_number);
 void _push(stack_t **head, int push_arg, int line_number);
+void (*get_function(char *line))(stack_t **, unsigned int);
 #endif
